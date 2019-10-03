@@ -57,6 +57,7 @@ footer {
     width: 100%;
     position: fixed;
     z-index: 1;
+    display: block;
 }
 
 /* Style the links inside the navigation bar */
@@ -135,8 +136,9 @@ span {
 
 
 
-.grid-item {
-    padding: 0 20px;
+.about-box,
+.testimonial-box {
+    padding: 5px 20px;
 }
 
 h2:after {
@@ -149,20 +151,19 @@ h2:after {
     margin-top: 30px;
 }
 
-.blockquote {
-    padding: 2%;
+.blockquote {  
     font-style: italic;
     line-height: 145%;
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .blockquote:before {
     content: "\201C";
     font-size: 400%;
     position: absolute;
-    top: -5px;
-    left: -5px;
+    top: 0px;
+    left: 15px;
 }
 
 .user {
@@ -178,8 +179,11 @@ h2:after {
     vertical-align: middle;
 }
 
-.about {
-    padding-top: 100px;
+.about,
+.testimonials
+ {
+    padding: 50px 0;
+
 }
 
 .testimonials {
@@ -196,7 +200,7 @@ h2:after {
 /* Media queries */
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one (website brand). Show the hamburger menu icon. The "mobile-nav" class is added */
-@media screen and (max-width: 600px) {
+
     .main-nav a:not(:first-child) {
         display: none;
     }
@@ -206,26 +210,37 @@ h2:after {
       display: block;
     }
 
-    .main-nav.mobile-nav {
-        position: relative;
-    }
-
     .main-nav.mobile-nav a.hamburger-icon {
       position: absolute;
       right: 0;
       top: 0;
-      
     }
-
+      
     .main-nav.mobile-nav a {
       float: none;
       display: block;
       text-align: left;
     }
-  }
+  
   
   /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {.wrapper {
+@media only screen and (min-width: 992px) {
+    .wrapper {
     display: grid;
-    grid-template-columns: auto auto auto ;}
+    grid-template-columns: auto auto auto ;
+}
+
+
+    .main-nav a:not(:first-child) {
+        display: block;
+    }
+
+    .main-nav a.hamburger-icon {
+        display: none;
+    }
+
+    .blockquote:before {
+        top: -5px;
+        left: -5px;
+    }
   }
