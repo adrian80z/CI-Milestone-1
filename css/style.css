@@ -39,6 +39,15 @@ h2 {
     text-transform: uppercase;
 }
 
+.about,
+.testimonials,
+.newsletter,
+.contact
+ {
+    padding: 50px 0;
+
+}
+
 
 
 footer {
@@ -48,10 +57,8 @@ footer {
 }
 
 
-/* Home page */
-
 /* Main Navigation*/
-/* Add a background color to the main navigation */
+/* Add a background color to the main navigation and position fixed */
 .main-nav {
     background-color: #333;
     width: 100%;
@@ -89,8 +96,31 @@ footer {
 }
 
 /* Hide the hamburger icon in main-nav */
-    .main-nav .hamburger-icon {
+.main-nav .hamburger-icon {
     display: none;
+}
+
+/* mobile*/
+
+.main-nav a:not(:first-child) {
+    display: none;
+}
+
+.main-nav a.hamburger-icon {
+  float: right;
+  display: block;
+}
+
+.main-nav.mobile-nav a.hamburger-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+  
+.main-nav.mobile-nav a {
+  float: none;
+  display: block;
+  text-align: left;
 }
 
 
@@ -202,14 +232,7 @@ h2:after {
     vertical-align: middle;
 }
 
-.about,
-.testimonials,
-.newsletter,
-.contact
- {
-    padding: 50px 0;
 
-}
 
 .testimonials {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-min.jpg');
@@ -225,43 +248,16 @@ h2:after {
     color: #f2f2f2;
 }
 
-
-
-/* Media queries */
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one (website brand). Show the hamburger menu icon. The "mobile-nav" class is added */
-
-    .main-nav a:not(:first-child) {
-        display: none;
-    }
-
-    .main-nav a.hamburger-icon {
-      float: right;
-      display: block;
-    }
-
-    .main-nav.mobile-nav a.hamburger-icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-      
-    .main-nav.mobile-nav a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-
-
     .subpage-text-box {
         position: absolute;
         position: absolute;
-        top: 40%;
+        top: 30vh;
         left: 20px;
         color: #f2f2f2;
     }
 
     /* Contact page */
+
     .hero-image {
         height: 50vh;
     }
@@ -269,8 +265,79 @@ h2:after {
     .contact-img {
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-min.jpg');
     }
+
+
+/* Code for modal box taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ffad33;
+    color: #f2f2f2;
+  }
+  
+  .modal-body {
+      padding: 2px 16px;
+    }
   
   
+
+  /* Media queries */
+
   /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .wr-testimonials,
