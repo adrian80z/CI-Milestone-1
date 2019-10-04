@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i" rel="stylesheet">
     <!-- Font Awesome CDN -->
     <script src="https://use.fontawesome.com/639c585441.js"></script>
-    <title>ProFit Gym</title>
+    <title>Home | ProFit Gym</title>
 </head>
 <body>
     <header>
       <!-- nav -->
         <nav class="main-nav" id="mainNav">
-            <a href="index.html">ProFit Gym</a>
-            <a href="#home" class="active">Home</a>
+            <a href="index.html"><strong>ProFit Gym</strong></a>
+            <a href="index.html" class="active">Home</a>
             <a href="#classes">Classes</a>
             <a href="pages/contact.html">Contact</a>
             <a href="javascript:void(0);" class="hamburger-icon" onclick="mainMenuToggle()">
@@ -29,7 +29,7 @@
               <h1>Welcome to ProFit Gym</h1>
               <h3>FIRST LESSON <span>FREE</span></h3>
               
-              <a href="#" class="btn">Sign Up Today!</a>
+              <a href="#" class="btn" id="myBtn">Sign Up Today!</a>
           </div>
     </header><!-- //header -->
     <main>
@@ -80,6 +80,28 @@
               </form>
               </div>
         </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="wrapper">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Join us today!</h2>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
+                  <button class="btn" type="submit">Join</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
     </main><!-- //main-->
     <footer>
     
