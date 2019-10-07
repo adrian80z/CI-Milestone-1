@@ -35,7 +35,7 @@
     <main>
         <section class="about">
               <h2>About Us</h2>
-              <div class="wrapper desktop-grid">
+              <div class="wrapper desktop-two-col-grid">
               <div class="grid-box">
               <p>A gymnasium, also known as a gym, is a covered location for gymnastics, athletics and gymnastic services. ... 
                 They are commonly found in athletic and fitness centers, and as activity and learning spaces in educational institutions. 
@@ -55,7 +55,7 @@
             
               <h2>Testimonials</h2>
             
-            <div class = "wrapper desktop-grid">
+            <div class = "wrapper desktop-three-col-grid">
             <div class="grid-box blockquote">A gymnasium, also known as a gym, is a covered location for gymnastics, athletics and gymnastic services. ... 
                 They are commonly found in athletic and fitness centers
                 <div class="user"><img src="images/person-80.png">Adrian Ziokowski</div>
@@ -95,6 +95,10 @@
                   <input type="text" placeholder="Name" required/>
                   <input type="text" placeholder="Phone No." required />
                   <input type="text" placeholder="Email address" required/>
+                  <select>
+                    <option value=" ">Select Class</option>
+                    <option value="Zumba">Zumba</option>
+                  </select>
                   <button class="btn" type="submit">Join</button>
                 </form>
               </div>
@@ -103,9 +107,27 @@
           </div>
     </main><!-- //main-->
     <footer>
-    
+        <div class="wrapper footer-grid">
+            <div class="grid-box"><span class="underline">Get In Touch</span><br/>
+                <div class="footer-info">
+                    <b>Query: </b><a href="tel:+3531233454567"> +353 1233454567</a><br/>
+                    <b>E-mail: </b> <a href="mailto:info.profitgym@gmail.com"> info.profitgym@gmail.com</a>
+                </div>
+            </div>
+            <div class="grid-box"><span class="underline">Follow Us</span><br/>
+                 <div class="social-grid">    
+                      <a href="#"><i class="fa fa-facebook-square"></i></a>
+                      <a href="#"><i class="fa fa-twitter-square"></i></a>
+                      <a href="#"><i class="fa fa-youtube"></i></a>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                  </div>
+            </div>
+          </div>
+          <div class="wrapper ">
+                <p class="copyright">ProFit Gym Website Project - Milestone 1 - Code Institute 2019</p>
+            </div>  
     </footer><!-- //footer -->
     <!-- custom js scripts -->
-    <script src="js/scripts.js" ></script>
+    <script src="../js/scripts.js" ></script>
 </body>
 </html>
