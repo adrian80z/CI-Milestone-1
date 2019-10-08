@@ -396,6 +396,32 @@ h2:after {
         transform: scale(1.08);
         opacity: 1;
     }
+    
+    table {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 380px;
+    }
+
+    table th {
+        background-color: #ffad33;
+        color: #f2f2f2;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      iframe {
+          margin-top: 30px;
+      }
 
 /* Code for modal box taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
     /* The Modal (background) */
