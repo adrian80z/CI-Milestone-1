@@ -26,19 +26,21 @@ img {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 2px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.3em;
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
-    line-height: 1.2em;
+    line-height: 1.4em;
     text-transform: uppercase;
 }
+
+
 
 .about,
 .testimonials,
@@ -47,10 +49,7 @@ h2 {
 .classes
  {
     padding: 50px 0;
-
 }
-
-
 
 footer {
     background-color: #333;
@@ -81,17 +80,19 @@ footer {
   }
 
   .underline {
-      border-bottom: 1px solid #f2f2f2;
       color: #f2f2f2;
       font-weight: bold;
-      font-size: 16px;
-      width: 150px;
+      font-size: 16px;   
       display: block;
-      padding: 24px 0 10px 0;
+      padding-top: 25px;
   }
 
   .footer-info {
       font-size: 16px;
+  }
+
+  .footer-info a {
+      text-decoration: none;
   }
 
   footer .grid-box {
@@ -127,12 +128,10 @@ footer {
     color: #f2f2f2;
     text-align: center;
     transition: .2s all linear;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
-/* Push all menu element to the right (exclude first element - website brand) */
-.main-nav a:first-child {
-    margin-left: 50px;
-    margin-right: 50px;
-}
+
 
 /* Change the color of links on hover (excluding first element - website brand) */
 .main-nav a:hover:not(:first-child) {
@@ -173,13 +172,18 @@ footer {
   text-align: left;
 }
 
+.logo {
+    color: #f2f2f2;
+    font-size: 1em;
+}
+
 
 /* Header */
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-min.jpg');
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/crossfit.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -191,6 +195,22 @@ header {
     color: #fff;
     min-width: 400px;
     text-align: center;
+}
+
+.hero-line-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-line-subtitle {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-line-subtitle span {
+    font-weight: bold;
+    font-size: 1.4em;
 }
 
 .btn {
@@ -206,29 +226,35 @@ header {
     outline: none;
 }
 
+#myBtn {
+    margin-bottom: 30px;
+}
+
  .form-btn {
      float: right;
      margin: 10px 0;
  }
 
 .btn-subscription {
-    background-color:#ff9900;
+    background-color:#333;
     border: none;
     cursor: pointer;
-    margin-left: -3px;
+    margin-left: -4px;
     border-radius: 0;
 }
 
 .btn:hover {
-    background-color: #ff9900; 
+    background-color:#ff9900; 
+}
+
+.btn-subscription:hover {
+    background-color: #000;
 }
 
 span {
     font-size: 1.2em;
     color: #ff9900;
 }
-
-
 
 .grid-box
  {
@@ -241,10 +267,18 @@ span {
 
 .news-box input {
     width: 270px;
-    padding: 3px 10px;
-    font-size: 18px;
+    padding: 4px 10px;
     border: none;
     box-shadow: none;
+    border-radius: 0;
+}
+
+.subscription-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 h2:after {
@@ -259,9 +293,12 @@ h2:after {
 
 .blockquote {  
     font-style: italic;
-    line-height: 145%;
     position: relative;
     margin-top: 60px;
+}
+
+.blockquote > p {
+    margin: 0;
 }
 
 .blockquote:before {
@@ -276,6 +313,7 @@ h2:after {
     font-size: 90%;
     margin-top: 25px;
     display: block;
+    text-align: center;
 }
 
 .user img {
@@ -301,130 +339,168 @@ h2:after {
     color: #f2f2f2;
 }
 
-    .subpage-text-box {
-        position: absolute;
-        position: absolute;
-        top: 35vh;
-        left: 20px;
-        color: #f2f2f2;
-    }
+.subpage-text-box {
+    position: absolute;
+    top: 40vh;
+    left: 20px;
+    color: #f2f2f2;
+}
 
-    /* Contact page */
+/* Contact page */
 
-    .hero-image {
-        height: 50vh;
-    }
+.hero-image {
+    height: 50vh;
+}
 
-    .contact-img {
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-min.jpg');
-    }
+.classes-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/classes.jpg');
+}
 
-    input, select, textarea {
-        border: medium none;
-        box-shadow: 1px 1px 2px gray;
-        height: 35px;
-        padding-left: 10px;
-        margin-bottom: 2%;
-        margin-top: 2%; 
-        width: 98%;
-        outline-color: #ffad33
-    }
+.contact-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/machines.jpg');
+}
 
-    select {
-        width: 100%;
-        color: #555;
-    }
+.zumba-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/zumba.jpg');
+}
+
+.yoga-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/yoga.jpg');
+}
+
+input, select, textarea {
+    border: none;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 2%;
+    margin-top: 2%; 
+    width: 98%;
+    outline: none;
+    border-bottom: 1px solid #bebebe;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-bottom: 1px solid #ffad33;
+}
+
+select {
+    width: 100%;
+    color: #555;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+    width: 97.5%;
+    padding-top: 10px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+strong {
+    font-size: 1.5em;
+}
+
+#signup {
+    box-shadow: 1px 1px 2px gray;
+    padding: 3%;
+    float: left; 
+    margin-top: 30px; 
+}
+
+#signup > p {
+    color: #fff;
+    background: #ffad33;
+    padding: 35px 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.contact-options a {
+    color: #555;
+    text-decoration: none;
+    transition: .2s all linear;
     
-    textarea {
-        resize: none;
-        min-height: 100px;
-        width: 97.5%;
-        font-family: 'Lato', Arial, sans-serif;
-    }
+}
 
-    #signup {
-        background-color: #f5f5f5;
-        box-shadow: 1px 1px 2px gray;
-        padding: 3%;
-        float: left;
-        
-    }
-
-    .contact-options a {
-        color: #555;
-        transition: .2s all linear;
-    }
-
-    .contact-options a:hover {
-        color: #ff9900;
-    }
+.contact-options a:hover, .footer-info a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
 
 
 
 
 
 
-    /* Classes page*/
-    .info-box {
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 28px;
-        color: #f2f2f2;
-        background: #ffad33;
-        display: block;
-        padding: 12px;
-        letter-spacing: 1px;    
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
-    }
-    .transform a {
-        text-decoration: none;
-    }
+/* Classes page*/
+.info-box {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #f2f2f2;
+    background: #ffad33;
+    display: block;
+    padding: 12px;
+    letter-spacing: 1px;    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+.desktop-three-col-grid a {
+    text-decoration: none;
+}
 
-     .transform {    
+.transform {    
     overflow: hidden;
     background: #000;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.transform img {
+    transform: scale(1.25);
+    transition: linear all .3s;
+    opacity: 0.8;
+}
+
+.transform img:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    margin-top: 50px;
+    max-width: 380px;
+}
+
+table th {
+    background-color: #ffad33;
+    color: #f2f2f2;
+}
+
+table, th, td {
+    border: 1px solid #bebebe;
+    border-collapse: collapse;
     }
 
-    .transform img {
-        transform: scale(1.25);
-        transition: linear all .3s;
-        opacity: 0.8;
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
     }
 
-    .transform img:hover {
-        transform: scale(1.08);
-        opacity: 1;
-    }
-    
-    table {
+    iframe {
+        margin-top: 30px;
+        border: 0;
         width: 100%;
-        margin-top: 50px;
-        max-width: 380px;
+        height: 250px;
     }
 
-    table th {
-        background-color: #ffad33;
-        color: #f2f2f2;
+    .youtube-video {
+        height: 350px;
     }
-
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-
-    th, td {
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      iframe {
-          margin-top: 30px;
-      }
 
 /* Code for modal box taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
-    /* The Modal (background) */
+/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -437,98 +513,113 @@ h2:after {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
 
-  /* Modal Content */
-  .modal-content {
+/* Modal Content */
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
-  }
-  
-  /* Add Animation */
-  @-webkit-keyframes animatetop {
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
-  }
-  
-  @keyframes animatetop {
+}
+
+@keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .modal-header {
+}
+
+.modal-header {
     padding: 2px 16px;
     background-color: #ffad33;
     color: #f2f2f2;
-  }
-  
-  .modal-body {
-      padding: 2px 16px;
-    }
-  
-  
+}
 
-  /* Media queries */
+.modal-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-  /* Large devices (laptops/desktops, 992px and up) */
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+
+/* Media queries */
+
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .desktop-two-col-grid {
-        grid-template-columns: 2fr 1.5fr;
+.desktop-two-col-grid {
+    grid-template-columns: 2fr 1.5fr;
 }   
-    .desktop-three-col-grid {
-        grid-template-columns: auto auto auto;
-}   
-    .footer-grid {
-        grid-template-columns: 2fr 1fr;
-    }
+.desktop-three-col-grid {
+    grid-template-columns: auto auto auto;
+} 
+/* Push all menu element to the right (exclude first element - website brand) */
+.main-nav a:first-child {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
-    footer .grid-box {
-        text-align: start;    
-    }
-  
-    footer .social-grid {
-        justify-content: normal;
-    }
+table {
+    margin-left: 20px;
+}
+
+.footer-grid {
+    grid-template-columns: 2fr 1fr;
+}
+
+footer .grid-box {
+    text-align: start;    
+}
+
+footer .social-grid {
+    justify-content: normal;
+}
 
 
-    .main-nav a:not(:first-child) {
-        display: block;
-    }
+.main-nav a:not(:first-child) {
+    display: block;
+}
 
-    .main-nav a.hamburger-icon {
-        display: none;
-    }
+.main-nav a.hamburger-icon {
+    display: none;
+}
 
-    .blockquote:before {
-        top: -5px;
-        left: -5px;
-    }
+.blockquote:before {
+    top: -5px;
+    left: -5px;
+}
 
-    .modal-content {
-        width: 60%;
-    }
-  }
+.modal-content {
+    width: 60%;
+}
+}
