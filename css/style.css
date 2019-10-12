@@ -585,6 +585,17 @@ th, td {
 
 
 /* Media queries */
+/* Medium devices (tablets)*/
+@media only screen and (min-width: 768px) {
+.about,
+.testimonials,
+.newsletter,
+.contact,
+.classes
+    {
+    padding: 50px;
+}  
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
