@@ -40,8 +40,6 @@ h2 {
     text-transform: uppercase;
 }
 
-
-
 .about,
 .testimonials,
 .newsletter,
@@ -129,7 +127,7 @@ footer {
     text-align: center;
     transition: .2s all linear;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
@@ -180,7 +178,7 @@ footer {
 
 /* Header */
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/crossfit.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/crossfit.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -326,7 +324,7 @@ h2:after {
 
 
 .testimonials {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-min.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/hero-min.jpg');
 	background-size: cover;
 	background-position: center;
     background-attachment: fixed;
@@ -353,19 +351,35 @@ h2:after {
 }
 
 .classes-img {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/classes.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/classes1.jpg');
 }
 
 .contact-img {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/machines.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/contact.jpg');
 }
 
 .zumba-img {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/zumba.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/zumba.jpg');
 }
 
 .yoga-img {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/yoga.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/yoga.jpg');
+}
+
+.spin-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/spin12.jpg');
+}
+
+.push-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/gym-weights2.jpg');
+}
+
+.pilates-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/pilates.jpg');
+}
+
+.cardio-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/page-backgrounds/cardio.jpg');
 }
 
 input, select, textarea {
@@ -427,9 +441,6 @@ strong {
     color: #ff9900;
     text-decoration: underline;
 }
-
-
-
 
 
 
